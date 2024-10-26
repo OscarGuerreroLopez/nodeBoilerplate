@@ -7,15 +7,18 @@ import { HttpCode, ONE_HUNDRED, ONE_THOUSAND, SIXTY } from './core/constants';
 interface ServerOptions {
 	port: number;
 	apiPrefix: string;
+	platform: string;
 }
 
 export class Server {
 	private readonly app = express();
 	private readonly port: number;
+	private readonly platform: string;
 
 	constructor(options: ServerOptions) {
-		const { port } = options;
+		const { port, platform } = options;
 		this.port = port;
+		this.platform = platform;
 	}
 
 	async start(): Promise<void> {
@@ -35,7 +38,7 @@ export class Server {
 		// Test rest api
 		this.app.get('/', (_req: Request, res: Response) => {
 			return res.status(HttpCode.OK).send({
-				message: `Welcome to Initial API! \n Endpoints available at http://localhost:${this.port}/`
+				message: `Welcome to Initial API! \n ${this.platform} Endpoints available at http://localhost:${this.port}/`
 			});
 		});
 

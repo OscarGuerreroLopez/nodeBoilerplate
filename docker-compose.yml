@@ -10,7 +10,7 @@ services:
     env_file:
       - .docker.env
     volumes:
-      - .:/usr/src/app
+      - .:/src/app
     networks:
       - app-network
     restart: unless-stopped

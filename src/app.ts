@@ -1,3 +1,4 @@
+import { platform } from 'os';
 import { envs } from './core/config/env';
 import { Server } from './server';
 
@@ -8,7 +9,8 @@ import { Server } from './server';
 function main(): void {
 	const server = new Server({
 		port: envs.PORT,
-		apiPrefix: envs.API_PREFIX
+		apiPrefix: envs.API_PREFIX,
+		platform: envs.PLATFORM
 	});
 	void server.start();
 }
