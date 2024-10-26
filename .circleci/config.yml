@@ -46,8 +46,6 @@ jobs:
       - image: cimg/base:stable
     steps:
       - docker/install-docker-compose:
-          version: '2.6.0' 
-
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
 workflows:
