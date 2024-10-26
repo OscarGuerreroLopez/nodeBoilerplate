@@ -48,6 +48,7 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       - docker/install-docker
+      - setup_remote_docker
       - docker/install-docker-compose
       - run:
           name: Run docker-compose
