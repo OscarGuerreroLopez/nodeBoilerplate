@@ -45,8 +45,7 @@ jobs:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
-      - docker/install-docker-compose:
-          version: '3.8' 
+      - docker/install-docker-compose
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
