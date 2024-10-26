@@ -1,4 +1,3 @@
-import { platform } from 'os';
 import { envs } from './core/config/env';
 import { Server } from './server';
 
