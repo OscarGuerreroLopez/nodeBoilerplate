@@ -45,6 +45,8 @@ jobs:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
+      # Checkout the code as the first step.
+      - checkout
       - docker/install-docker-compose
       - run:
           name: Run docker-compose
