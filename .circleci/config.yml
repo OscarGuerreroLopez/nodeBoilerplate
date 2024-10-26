@@ -46,6 +46,9 @@ jobs:
       - image: cimg/base:stable
     steps:
       - docker/install-docker-compose
+      - run:
+          name: Run Docker Compose
+          command: docker-compose up -d
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
