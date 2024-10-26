@@ -54,6 +54,10 @@ jobs:
           name: Run docker-compose
           command: |
             docker-compose up -d --build
+      - run:      
+          name: Run docker-compose down
+          command: |
+            docker-compose down --remove-orphans
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
