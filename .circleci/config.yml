@@ -47,6 +47,7 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
+      - docker/install-docker
       - docker/install-docker-compose
       - run:
           name: Run docker-compose
