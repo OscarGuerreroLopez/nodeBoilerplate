@@ -1,0 +1,641 @@
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: 'b16e7bda-3f58-4012-b611-c005471718c5',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'd13bbe30-743b-4e27-9e05-87f900ca3cd6',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 6801ms',
+  timestamp: '2024-10-27T16:16:05.608Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '66fe6dbe-b552-412b-82a8-5a8861021f8e',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '68224641-2801-432f-aa8e-ea8378a37af2',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 5ms',
+  timestamp: '2024-10-27T16:19:04.258Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '2cd7374e-21ee-4714-9bb9-180b6bbc20e7',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 10ms',
+  timestamp: '2024-10-27T17:32:01.717Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: 'd8dcf203-48d6-42aa-b497-a77a048bfdf0',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'ee2b14ba-c8be-4b7c-bfc8-5d77d63a4516',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 3ms',
+  timestamp: '2024-10-27T17:38:55.030Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '6332cee1-1610-4aec-a202-cea94a460c4b',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '6cf70eb3-6663-4232-b9db-aaa8bdfd8e69',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 3ms',
+  timestamp: '2024-10-27T17:40:57.243Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '2f7a913d-8a09-4e07-bc53-c17081a46b71',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'da8e9b4c-1c6d-42a1-89eb-0e9de2e4977a',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T17:42:20.940Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '2f7a913d-8a09-4e07-bc53-c17081a46b71',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'da8e9b4c-1c6d-42a1-89eb-0e9de2e4977a',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 12ms',
+  timestamp: '2024-10-27T17:42:20.951Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '351334f0-0c97-464e-85e7-9421b7d4a72f',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'f9c45c9b-6afc-4e26-b38b-d687c51d997c',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T17:47:37.774Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '351334f0-0c97-464e-85e7-9421b7d4a72f',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'f9c45c9b-6afc-4e26-b38b-d687c51d997c',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 11ms',
+  timestamp: '2024-10-27T17:47:37.786Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '4fbf1e23-c53d-4f37-89b3-6c6274484450',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '0566ee9b-ef28-47df-9633-559cdc979ff6',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T17:50:58.508Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '4fbf1e23-c53d-4f37-89b3-6c6274484450',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '0566ee9b-ef28-47df-9633-559cdc979ff6',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  responseBody: '{"data":{"message":"OK","code":"4fbf1e23-c53d-4f37-89b3-6c6274484450"}}',
+  level: 'info',
+  message: 'Request time: 4ms',
+  timestamp: '2024-10-27T17:50:58.512Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '6c54c2ab-4ca8-4d6a-9757-7847ba3f0ffd',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '1a531fba-3e41-4666-be9c-744ffeafcc1f',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T17:52:26.794Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '6c54c2ab-4ca8-4d6a-9757-7847ba3f0ffd',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '1a531fba-3e41-4666-be9c-744ffeafcc1f',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  responseBody: '{"data":{"message":"OK","code":"6c54c2ab-4ca8-4d6a-9757-7847ba3f0ffd","email":"oscar@oscar.com"}}',
+  level: 'info',
+  message: 'Request time: 10ms',
+  timestamp: '2024-10-27T17:52:26.801Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: 'c884efe1-aaed-4c67-9be3-249d7dfc874b',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'bbbba30c-d260-4589-9062-14905534c69d',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T17:53:42.548Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: 'c884efe1-aaed-4c67-9be3-249d7dfc874b',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'bbbba30c-d260-4589-9062-14905534c69d',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  responseBody: '{"data":{"message":"OK","code":"c884efe1-aaed-4c67-9be3-249d7dfc874b","email":"oscar@oscar.com"}}',
+  level: 'info',
+  message: 'Request time: 9137ms',
+  timestamp: '2024-10-27T17:55:47.255Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '1997c083-655b-4f46-9d09-d4e4d521d2c0',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'dd2ef4ff-574e-4602-b6b4-85f1855f1807',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T17:56:28.779Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '1997c083-655b-4f46-9d09-d4e4d521d2c0',
+  body: '{"data":{"message":"OK","code":"1997c083-655b-4f46-9d09-d4e4d521d2c0","email":"oscar@oscar.com"}}',
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'dd2ef4ff-574e-4602-b6b4-85f1855f1807',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 5ms',
+  timestamp: '2024-10-27T17:56:28.784Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '6a4680c7-c36f-4318-8105-b6b3ede5d64a',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '64f3e812-ae05-45cd-afbe-1f52db799c8e',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T17:56:54.425Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '6a4680c7-c36f-4318-8105-b6b3ede5d64a',
+  body: '{"data":{"message":"OK","code":"6a4680c7-c36f-4318-8105-b6b3ede5d64a","email":"oscar@oscar.com"}}',
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '64f3e812-ae05-45cd-afbe-1f52db799c8e',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 3ms',
+  timestamp: '2024-10-27T17:56:54.429Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: 'e44abdaf-229b-4852-9935-a5d2f50b1141',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '44159107-099d-4e52-937e-87b63c927a2a',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T17:58:53.970Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: 'e44abdaf-229b-4852-9935-a5d2f50b1141',
+  body: {
+    data: {
+      message: 'OK',
+      code: 'e44abdaf-229b-4852-9935-a5d2f50b1141',
+      email: 'os***@*.com'
+    }
+  },
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '44159107-099d-4e52-937e-87b63c927a2a',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 7ms',
+  timestamp: '2024-10-27T17:58:58.494Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '2392f90b-0472-41bc-a934-1241c049e7cc',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '785d12ef-5809-4743-9c8c-1bc6101f30c6',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T17:59:49.802Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '2392f90b-0472-41bc-a934-1241c049e7cc',
+  body: '{"data":{"message":"OK","code":"2392f90b-0472-41bc-a934-1241c049e7cc","email":"oscar@oscar.com"}}',
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '785d12ef-5809-4743-9c8c-1bc6101f30c6',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 16221ms',
+  timestamp: '2024-10-27T18:00:06.024Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '33a25410-0fa8-458d-97a2-ca588cbd1f61',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '626b8e86-8c00-4f47-be0a-b0d6949f47e6',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T18:02:11.984Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '33a25410-0fa8-458d-97a2-ca588cbd1f61',
+  body: {
+    data: {
+      message: 'OK',
+      code: '33a25410-0fa8-458d-97a2-ca588cbd1f61',
+      email: 'os***@*.com'
+    }
+  },
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': '626b8e86-8c00-4f47-be0a-b0d6949f47e6',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 13201ms',
+  timestamp: '2024-10-27T18:02:25.185Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '398440cb-735b-4924-9e31-34720688f35c',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'e36176df-a4ec-4467-96e1-b349f39acda8',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T18:04:55.022Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '398440cb-735b-4924-9e31-34720688f35c',
+  body: {
+    data: { message: 'OK', code: '398440cb-735b-4924-9e31-34720688f35c' }
+  },
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'e36176df-a4ec-4467-96e1-b349f39acda8',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 5ms',
+  timestamp: '2024-10-27T18:04:55.027Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: 'b7a5236e-3e94-431a-a417-05aba2737746',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'ebcedc3b-02c8-427b-8bb8-cecaaa8d4389',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T18:04:56.118Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: 'b7a5236e-3e94-431a-a417-05aba2737746',
+  body: {
+    data: { message: 'OK', code: 'b7a5236e-3e94-431a-a417-05aba2737746' }
+  },
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'ebcedc3b-02c8-427b-8bb8-cecaaa8d4389',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 2ms',
+  timestamp: '2024-10-27T18:04:56.120Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '9b353cc4-e57d-4853-a379-3cd7aa3b8591',
+  body: {},
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'fab7d99b-ef10-4a35-9ff5-5cdf696f465b',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /api/v1/myapp/meta, host:localhost',
+  level: 'info',
+  message: 'init request',
+  timestamp: '2024-10-27T18:04:56.964Z'
+}
+{
+  service: 'boilerplate',
+  file: 'logger.ts',
+  property: 'LoggerMiddleware',
+  code: '9b353cc4-e57d-4853-a379-3cd7aa3b8591',
+  body: {
+    data: { message: 'OK', code: '9b353cc4-e57d-4853-a379-3cd7aa3b8591' }
+  },
+  headers: {
+    origin: 'hello',
+    'user-agent': 'PostmanRuntime/7.42.0',
+    accept: '*/*',
+    'postman-token': 'fab7d99b-ef10-4a35-9ff5-5cdf696f465b',
+    host: 'localhost:3001',
+    'accept-encoding': 'gzip, deflate, br',
+    connection: 'keep-alive'
+  },
+  method: 'Method: GET, path: /meta, host:localhost',
+  level: 'info',
+  message: 'Request time: 4ms',
+  timestamp: '2024-10-27T18:04:56.967Z'
+}

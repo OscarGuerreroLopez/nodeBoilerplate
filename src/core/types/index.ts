@@ -15,3 +15,13 @@ export interface ErrorResponse {
 	validationErrors?: ValidationType[];
 	stack?: string;
 }
+
+export type IObjectLiteral = Record<string, any>;
+
+export interface LoggerData {
+	service: string;
+	file: string;
+	method?: string;
+	code: string;
+	[key: string]: unknown;
+}

@@ -6,7 +6,8 @@ export class MyAppController {
 	public getMeta = (req: Request, res: Response<SuccessResponse<MetaResponseEntity>>, next: NextFunction): void => {
 		res.json({
 			data: {
-				message: 'OK'
+				message: 'OK',
+				code: req.code ?? 'noCode'
 			}
 		});
 	};

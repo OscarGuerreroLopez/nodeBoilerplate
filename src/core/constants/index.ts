@@ -15,3 +15,16 @@ export enum HttpCode {
 	NOT_FOUND = 404,
 	INTERNAL_SERVER_ERROR = 500
 }
+
+export enum NodeEnvEnum {
+	DEVELOPMENT = 'development',
+	TEST = 'test',
+	PROD = 'prod'
+}
+
+export enum Severity {
+	DEBUG = 'debug',
+	INFO = 'info',
+	WARN = 'warn',
+	ERROR = 'error'
+}
