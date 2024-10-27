@@ -6,7 +6,7 @@ export class AppRoutes {
 	static get routes(): Router {
 		const router = Router();
 
-		router.use('/myapp', MyAppRoutes.routes);
+		router.use('/', MyAppRoutes.routes);
 
 		// rest of routes
 		// ...
