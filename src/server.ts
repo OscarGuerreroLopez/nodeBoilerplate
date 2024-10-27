@@ -1,9 +1,6 @@
 import express, { type Request, type Response, type Router, type NextFunction } from 'express';
-import rateLimit from 'express-rate-limit';
-import cors from 'cors';
-import { ONE_HUNDRED, ONE_THOUSAND, SIXTY } from './core/constants';
 import { AppError } from './core';
-import { ExceptionMiddleware } from './features/shared';
+import { ExceptionMiddleware, expressEssentials, expressRateLimiter } from './features/shared';
 
 interface ServerOptions {
 	port: number;
@@ -29,17 +26,8 @@ export class Server {
 
 	async start(): Promise<void> {
 		//* Middlewares
-		this.app.use(express.json()); // parse json in request body (allow raw)
-		this.app.use(express.urlencoded({ extended: true })); // allow x-www-form-urlencoded
-		this.app.use(cors({ credentials: true, origin: true }));
-		//  limit repeated requests to public APIs
-		this.app.use(
-			rateLimit({
-				max: ONE_HUNDRED,
-				windowMs: SIXTY * SIXTY * ONE_THOUSAND,
-				message: 'Too many requests from this IP, please try again in one hour'
-			})
-		);
+		expressEssentials(this.app);
+		expressRateLimiter(this.app);
 
 		this.app.use(this.apiPrefix, this.routes);
 
