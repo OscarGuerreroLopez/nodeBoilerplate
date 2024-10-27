@@ -1,6 +1,6 @@
 {
   "exclude": ["node_modules", "dist", "src/**/*.test.ts"],
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "express.d.ts"],
   "compilerOptions": {
     "types": ["node", "jest", "express"],
     "target": "ESNext",

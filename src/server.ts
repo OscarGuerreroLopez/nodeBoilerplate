@@ -1,6 +1,7 @@
 import express, { type Request, type Response, type Router, type NextFunction } from 'express';
 import { AppError } from './core';
-import { ExceptionMiddleware, expressEssentials, expressRateLimiter } from './features/shared';
+import { ExceptionMiddleware, expressEssentials, expressRateLimiter, LoggerMiddleware } from './features/shared';
+import { makeUUID } from './core/common';
 
 interface ServerOptions {
 	port: number;
@@ -8,6 +9,8 @@ interface ServerOptions {
 	platform: string;
 	routes: Router;
 }
+
+const loggerMiddleware = new LoggerMiddleware(makeUUID);
 
 export class Server {
 	private readonly app = express();
@@ -28,6 +31,8 @@ export class Server {
 		//* Middlewares
 		expressEssentials(this.app);
 		expressRateLimiter(this.app);
+
+		this.app.use(loggerMiddleware.writeRequest);
 
 		this.app.use(this.apiPrefix, this.routes);
 
