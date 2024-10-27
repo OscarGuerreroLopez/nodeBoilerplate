@@ -1,23 +1,29 @@
-import express, { type Request, type Response } from 'express';
+import express, { type Request, type Response, type Router, type NextFunction } from 'express';
 import rateLimit from 'express-rate-limit';
 
-import { HttpCode, ONE_HUNDRED, ONE_THOUSAND, SIXTY } from './core/constants';
+import { ONE_HUNDRED, ONE_THOUSAND, SIXTY } from './core/constants';
+import { AppError } from './core';
 
 interface ServerOptions {
 	port: number;
 	apiPrefix: string;
 	platform: string;
+	routes: Router;
 }
 
 export class Server {
 	private readonly app = express();
 	private readonly port: number;
 	private readonly platform: string;
+	private readonly routes: Router;
+	private readonly apiPrefix: string;
 
 	constructor(options: ServerOptions) {
-		const { port, platform } = options;
+		const { port, platform, routes, apiPrefix } = options;
 		this.port = port;
 		this.platform = platform;
+		this.routes = routes;
+		this.apiPrefix = apiPrefix;
 	}
 
 	async start(): Promise<void> {
@@ -33,11 +39,11 @@ export class Server {
 			})
 		);
 
-		// Test rest api
-		this.app.get('/', (_req: Request, res: Response) => {
-			return res.status(HttpCode.OK).send({
-				message: `Welcome to Initial API! \n ${this.platform} Endpoints available at http://localhost:${this.port}/`
-			});
+		this.app.use(this.apiPrefix, this.routes);
+
+		//* Handle not found routes in /api/v1/* (only if 'Public content folder' is not available)
+		this.routes.all('*', (req: Request, _: Response, next: NextFunction): void => {
+			next(AppError.notFound(`Cant find ${req.originalUrl} on this server!`));
 		});
 
 		this.app.listen(this.port, () => {
