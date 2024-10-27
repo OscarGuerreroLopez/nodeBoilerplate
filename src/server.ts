@@ -38,7 +38,7 @@ export class Server {
 
 		//* Handle not found routes in /api/v1/* (only if 'Public content folder' is not available)
 		this.routes.all('*', (req: Request, _: Response, next: NextFunction): void => {
-			next(AppError.notFound(`Cant find ${req.originalUrl} on this server!`));
+			next(AppError.notFound(`Cant find ${req.originalUrl} on this app!`));
 		});
 
 		// Handle errors middleware
