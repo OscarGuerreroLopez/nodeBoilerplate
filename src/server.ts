@@ -1,8 +1,9 @@
 import express, { type Request, type Response, type Router, type NextFunction } from 'express';
 import rateLimit from 'express-rate-limit';
-
+import cors from 'cors';
 import { ONE_HUNDRED, ONE_THOUSAND, SIXTY } from './core/constants';
 import { AppError } from './core';
+import { ExceptionMiddleware } from './features/shared';
 
 interface ServerOptions {
 	port: number;
@@ -30,6 +31,7 @@ export class Server {
 		//* Middlewares
 		this.app.use(express.json()); // parse json in request body (allow raw)
 		this.app.use(express.urlencoded({ extended: true })); // allow x-www-form-urlencoded
+		this.app.use(cors({ credentials: true, origin: true }));
 		//  limit repeated requests to public APIs
 		this.app.use(
 			rateLimit({
@@ -45,6 +47,9 @@ export class Server {
 		this.routes.all('*', (req: Request, _: Response, next: NextFunction): void => {
 			next(AppError.notFound(`Cant find ${req.originalUrl} on this server!`));
 		});
+
+		// Handle errors middleware
+		this.routes.use(ExceptionMiddleware);
 
 		this.app.listen(this.port, () => {
 			console.log(`Server running on port ${this.port}...`);
