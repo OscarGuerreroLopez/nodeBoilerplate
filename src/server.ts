@@ -2,6 +2,7 @@ import express, { type Request, type Response, type Router, type NextFunction } 
 import { AppError } from './core';
 import { ExceptionMiddleware, expressEssentials, expressRateLimiter, LoggerMiddleware } from './features/shared';
 import { makeUUID } from './core/common';
+import { credentialsMiddleware } from './features/myapp';
 
 interface ServerOptions {
 	port: number;
@@ -33,6 +34,7 @@ export class Server {
 		expressRateLimiter(this.app);
 
 		this.app.use(loggerMiddleware.writeRequest);
+		this.app.use(credentialsMiddleware);
 
 		this.app.use(this.apiPrefix, this.routes);
 

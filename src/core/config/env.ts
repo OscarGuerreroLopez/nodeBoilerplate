@@ -5,5 +5,6 @@ export const envs = {
 	PORT: get('PORT').required().asPortNumber(),
 	API_PREFIX: get('DEFAULT_API_PREFIX').default('/api/v1').asString(),
 	NODE_ENV: get('NODE_ENV').default('development').asString(),
-	PLATFORM: get('PLATFORM').required().asString()
+	PLATFORM: get('PLATFORM').required().asString(),
+	API_KEY: get('API_KEY').required().asString()
 };
