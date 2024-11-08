@@ -12,6 +12,7 @@ services:
       DEFAULT_API_PREFIX: ${DEFAULT_API_PREFIX}
       NODE_ENV: ${NODE_ENV}
       PLATFORM: ${PLATFORM}
+      API_KEY: ${API_KEY}
     volumes:
       - .:/src/app
     networks:
