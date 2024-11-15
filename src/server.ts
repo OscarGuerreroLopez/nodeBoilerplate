@@ -1,5 +1,5 @@
 import express, { type Request, type Response, type Router, type NextFunction } from 'express';
-import { AppError } from './core';
+import { WarnError } from './core';
 import { ExceptionMiddleware, expressEssentials, expressRateLimiter, LoggerMiddleware } from './features/shared';
 import { makeUUID } from './core/common';
 import { credentialsMiddleware } from './features/myapp';
@@ -40,7 +40,7 @@ export class Server {
 
 		//* Handle not found routes in /api/v1/* (only if 'Public content folder' is not available)
 		this.routes.all('*', (req: Request, _: Response, next: NextFunction): void => {
-			next(AppError.notFound(`Cant find ${req.originalUrl} on this app!`));
+			next(WarnError.notFound(`Cant find ${req.originalUrl} on this app!`));
 		});
 
 		// Handle errors middleware
