@@ -29,34 +29,34 @@ export class LoggerMiddleware {
 				return originalSend(body); // Call the original `send` method
 			};
 
-			if (req.path && !req.path.includes('meta')) {
-				logger.info('init request', {
+			// if (req.path && !req.path.includes('meta')) {
+			logger.info('init request', {
+				service: 'boilerplate',
+				file: 'logger.ts',
+				property: 'LoggerMiddleware',
+				code: req.code ?? 'noCode',
+				body: req.body,
+				headers: req.headers,
+				method: `Method: ${req.method}, path: ${req.path}, host:${req.hostname}`
+			});
+
+			const logRequestTime = (): void => {
+				const endTime = new Date().getTime();
+				const elapsedTime = endTime - startTime;
+
+				logger.info(`Request time: ${elapsedTime}ms`, {
 					service: 'boilerplate',
 					file: 'logger.ts',
 					property: 'LoggerMiddleware',
 					code: req.code ?? 'noCode',
-					body: req.body,
+					body: responseBody,
 					headers: req.headers,
 					method: `Method: ${req.method}, path: ${req.path}, host:${req.hostname}`
 				});
+			};
 
-				const logRequestTime = (): void => {
-					const endTime = new Date().getTime();
-					const elapsedTime = endTime - startTime;
-
-					logger.info(`Request time: ${elapsedTime}ms`, {
-						service: 'boilerplate',
-						file: 'logger.ts',
-						property: 'LoggerMiddleware',
-						code: req.code ?? 'noCode',
-						body: responseBody,
-						headers: req.headers,
-						method: `Method: ${req.method}, path: ${req.path}, host:${req.hostname}`
-					});
-				};
-
-				res.on('finish', logRequestTime);
-			}
+			res.on('finish', logRequestTime);
+			// }
 
 			next();
 		} catch (error) {
