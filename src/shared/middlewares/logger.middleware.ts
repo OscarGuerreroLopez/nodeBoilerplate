@@ -1,5 +1,7 @@
 import { type Response, type NextFunction, type Request } from 'express';
-import { AppError, type IObjectLiteral, logger } from '../../../../core';
+import { type IObjectLiteral } from 'micro-library-ai';
+import { AppError } from '../../core';
+import { logger } from '../logger';
 
 export class LoggerMiddleware {
 	makeUUID: () => string;

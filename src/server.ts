@@ -1,8 +1,13 @@
 import express, { type Request, type Response, type Router, type NextFunction } from 'express';
 import { WarnError } from './core';
-import { ExceptionMiddleware, expressEssentials, expressRateLimiter, LoggerMiddleware } from './features/shared';
-import { makeUUID } from './core/common';
-import { credentialsMiddleware } from './features/myapp';
+import {
+	credentialsMiddleware,
+	ExceptionMiddleware,
+	expressEssentials,
+	expressRateLimiter,
+	LoggerMiddleware,
+	makeUUID
+} from './shared';
 
 interface ServerOptions {
 	port: number;

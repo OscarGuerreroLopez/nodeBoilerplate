@@ -1,6 +1,5 @@
 import { Router } from 'express';
-
-import { MyAppRoutes } from './features/myapp';
+import { MyAppRoutes } from './myapp';
 
 export class AppRoutes {
 	static get routes(): Router {

@@ -1,5 +1,7 @@
 import { type Response, type Request, type NextFunction } from 'express';
-import { AppError, envs, type ErrorResponse, logger } from '../../../../core';
+import { AppError, envs } from '../../core';
+import { logger } from '../logger';
+import { type ErrorResponse } from 'micro-library-ai';
 
 export const credentialsMiddleware = (req: Request, _res: Response<ErrorResponse>, next: NextFunction): void => {
 	const apiKey = req.headers['x-api-key'] as string;
