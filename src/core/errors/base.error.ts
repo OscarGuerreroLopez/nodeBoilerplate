@@ -1,14 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-import { HttpCode } from '../constants';
-import { type ValidationType } from '../types';
-
-interface BaseErrorArgs {
-	name?: string;
-	statusCode: HttpCode;
-	message: string;
-	isOperational?: boolean;
-	validationErrors?: ValidationType[];
-}
+import { type BaseErrorArgs, HttpCode, type ValidationType } from 'micro-library-ai';
 
 export class BaseError extends Error {
 	public readonly name: string;

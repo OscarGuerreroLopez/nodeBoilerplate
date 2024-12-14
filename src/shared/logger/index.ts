@@ -1,8 +1,8 @@
 import * as winston from 'winston';
-import { envs } from '../config';
-import { NodeEnvEnum, Severity } from '../constants';
-import { SanitiseBody } from '../common';
-import { type LoggerData } from '../types';
+
+import { type LoggerData, NodeEnvEnum, Severity } from 'micro-library-ai';
+import { SanitiseBody } from '../../shared';
+import { envs } from '../../core';
 
 const { combine, timestamp, prettyPrint } = winston.format;
 

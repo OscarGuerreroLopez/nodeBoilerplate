@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-magic-numbers */
+import { type IObjectLiteral } from 'micro-library-ai';
 import { logger } from '../logger';
-import { type IObjectLiteral } from '../types';
 
 export const SanitiseBody = (unsanitisedBody: IObjectLiteral): IObjectLiteral => {
 	try {
