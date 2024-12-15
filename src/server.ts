@@ -49,7 +49,7 @@ export class Server {
 		});
 
 		// Handle errors middleware
-		this.routes.use(ExceptionMiddleware);
+		this.app.use(ExceptionMiddleware);
 
 		this.app.listen(this.port, () => {
 			console.log(`Server running on port ${this.port}...`);
