@@ -1,7 +1,7 @@
 import { type Response, type NextFunction, type Request } from 'express';
 import { type IObjectLiteral } from 'micro-library-ai';
-import { AppError } from '../../core';
 import { logger } from '../logger';
+import { AppError } from '../../core';
 
 export class LoggerMiddleware {
 	makeUUID: () => string;
@@ -29,34 +29,34 @@ export class LoggerMiddleware {
 				return originalSend(body); // Call the original `send` method
 			};
 
-			// if (req.path && !req.path.includes('meta')) {
-			logger.info('init request', {
-				service: 'boilerplate',
-				file: 'logger.ts',
-				property: 'LoggerMiddleware',
-				code: req.code ?? 'noCode',
-				body: req.body,
-				headers: req.headers,
-				method: `Method: ${req.method}, path: ${req.path}, host:${req.hostname}`
-			});
-
-			const logRequestTime = (): void => {
-				const endTime = new Date().getTime();
-				const elapsedTime = endTime - startTime;
-
-				logger.info(`Request time: ${elapsedTime}ms`, {
-					service: 'boilerplate',
+			if (!req.path.includes('meta')) {
+				logger.info('init request', {
+					service: 'ORCH',
 					file: 'logger.ts',
 					property: 'LoggerMiddleware',
 					code: req.code ?? 'noCode',
-					body: responseBody,
+					body: req.body,
 					headers: req.headers,
 					method: `Method: ${req.method}, path: ${req.path}, host:${req.hostname}`
 				});
-			};
 
-			res.on('finish', logRequestTime);
-			// }
+				const logRequestTime = (): void => {
+					const endTime = new Date().getTime();
+					const elapsedTime = endTime - startTime;
+
+					logger.info(`Request time: ${elapsedTime}ms`, {
+						service: 'ORCH',
+						file: 'logger.ts',
+						property: 'LoggerMiddleware',
+						code: req.code ?? 'noCode',
+						body: responseBody,
+						headers: req.headers,
+						method: `Method: ${req.method}, path: ${req.path}, host:${req.hostname}`
+					});
+				};
+
+				res.on('finish', logRequestTime);
+			}
 
 			next();
 		} catch (error) {
