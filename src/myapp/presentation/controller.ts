@@ -8,7 +8,8 @@ export class MyAppController {
 			data: {
 				message: 'OK',
 				code: req.code ?? 'noCode',
-				platform: envs.PLATFORM
+				platform: envs.PLATFORM,
+				environment: envs.NODE_ENV
 			}
 		});
 	};

@@ -3545,10 +3545,10 @@ methods@^1.1.2, methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==
 
-micro-library-ai@1.1.38:
-  version "1.1.38"
-  resolved "https://registry.yarnpkg.com/micro-library-ai/-/micro-library-ai-1.1.38.tgz#3f9d8bd6eec1f8014aa366e5e6b9609ccb4ae9cd"
-  integrity sha512-6MoDM4p8yG1pXpYNIHfQpnOC7pFPRM/eaEGoC14tpb1aPLn8o6OQm4XBnc/odbNPl468BEUQ3B5104sZnGhXRA==
+micro-library-ai@1.1.45:
+  version "1.1.45"
+  resolved "https://registry.yarnpkg.com/micro-library-ai/-/micro-library-ai-1.1.45.tgz#529f40418efba2ffcf4eb3d04a928d2da496af05"
+  integrity sha512-pj3jR1VrZ0J/p+Au48dwje/lfYZKJf9sgv9SqNej6dropYzFUZciiJhz9LBrw0Lvk4PZOMINO1YM4HgHe2GCGQ==
   dependencies:
     uuid "^11.0.3"
     winston "^3.16.0"
